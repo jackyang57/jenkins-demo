@@ -19,7 +19,6 @@ node('haimaxy-jnlp') {
     stage('Push') {
         echo "4.Push Docker Image Stage"
         sh "docker push 10.1.1.133:31005/cnych/jenkins-demo:${build_tag}"
-        }
     }
     stage('Deploy') {
         echo "5. Deploy Stage"
